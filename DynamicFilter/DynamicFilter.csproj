@@ -4,18 +4,19 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>System.Linq.$(AssemblyName)</PackageId>
+    <PackageId>Filter.$(AssemblyName)</PackageId>
     <Authors>Swaraj P Prabhakaran</Authors>
-    <Version>$(VersionPrefix)</Version>
+    <Version>1.0.1</Version>
     <Description>It provides some generic methods for applying dynamic filters along with linq queries.</Description>
     <PackageProjectUrl>https://github.com/swaraj-prabhakar/dynamic-filter</PackageProjectUrl>
     <RepositoryUrl>https://github.com/swaraj-prabhakar/dynamic-filter</RepositoryUrl>
-    <PackageReadmeFile>..\README.md</PackageReadmeFile>
-    <PackageTags>1.0.0</PackageTags>
-    <PackageReleaseNotes>ApplyFilter method on IAsyncEnumberable and IEnumerable to apply filter dynamically</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>1.0.1;1.0.0</PackageTags>
+    <PackageReleaseNotes>Updated README.md</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <PackageLicenseFile>..\LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,11 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
     <None Include=".\.editorconfig" />
+      <None Include="..\LICENSE" Pack="true" PackagePath="" />
+      <None Include="..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 	
 </Project>

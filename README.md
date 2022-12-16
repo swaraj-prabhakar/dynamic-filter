@@ -14,7 +14,7 @@ A package which provides some generic methods for applying filter dynamically al
 Using dotnet cli
 
 ```sh
-dotnet add package DynamicFilter;
+dotnet add package Filter.DynamicFilter;
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ dotnet add package DynamicFilter;
 Add using
 
 ```sh
-using System.Linq.DynamicFilter;
+using DynamicFilter;
 ```
 
 Apply filter on IAsyncEnumerable
