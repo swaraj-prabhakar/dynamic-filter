@@ -1,0 +1,101 @@
+[
+    {
+        "data": {
+            "filter": {
+                "property": "Employees",
+                "operator": "Any"
+            },
+            "orderBy": [
+                {
+                    "property": "Id"
+                }
+            ]
+        },
+        "result": [1,2]
+    },
+    {
+        "data": {
+            "filter": {
+                "property": "Employees",
+                "operator": "Any",
+                "anyFilter": {
+                    "property": "FirstName",
+                    "operator": "Contains",
+                    "type": "String",
+                    "value": "a"
+                }
+            },
+            "orderBy": [
+                {
+                    "property": "Id"
+                }
+            ]
+        },
+        "result": [1,2]
+    },
+    {
+        "data": {
+            "filter": {
+                "property": "Employees",
+                "operator": "Any",
+                "anyFilter": {
+                    "condition": "And",
+                    "filters": [
+                        {
+                            "property": "FirstName",
+                            "operator": "Contains",
+                            "value": "M",
+                            "caseSensitive": true
+                        },
+                        {
+                            "property": "LastName",
+                            "operator": "Contains",
+                            "value": "i"
+                        }
+                    ]
+                }
+            }
+        },
+        "result": [1]
+    },
+    {
+        "data": {
+            "filter": {
+                "condition": "Or",
+                "filters": [
+                    {
+                        "property": "Employees",
+                        "operator": "Any",
+                        "anyFilter": {
+                            "condition": "And",
+                            "filters": [
+                                {
+                                    "property": "FirstName",
+                                    "operator": "Contains",
+                                    "value": "m"
+                                },
+                                {
+                                    "property": "LastName",
+                                    "operator": "Contains",
+                                    "value": "i"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "property": "Name",
+                        "operator": "Contains",
+                        "value": "t2"
+                    }
+                ]
+            },
+            "orderBy": [
+                {
+                    "property": "Id",
+                    "ascending": false
+                }
+            ]
+        },
+        "result": [2,1]
+    }
+]

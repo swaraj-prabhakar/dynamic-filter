@@ -1,0 +1,10 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using DynamicFilter.Test.Data.Entities;
+global using DynamicFilter.Dtos;
+global using DynamicFilter.Test.Data;
+global using Xunit;
+global using DynamicFilter.Test.Repositories;
+global using Xunit.Sdk;
+global using Newtonsoft.Json;
+global using System.Reflection;
+global using DynamicFilter.Test.Services;
